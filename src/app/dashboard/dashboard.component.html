@@ -1,0 +1,32 @@
+<div class="dashboard">
+  <div class="dashboard__left">
+    <div>
+      <div class="title">
+        <span>HCM -</span>
+        EDU
+      </div>
+
+      <nav>
+        <button pButton type="button" class="p-button-sm" routerLink="/dashboard/listrecords">
+          <i class="pi pi-users" style="font-size: 20px"></i>
+          Danh sách học bạ
+        </button>
+        <button pButton type="button" class="p-button-sm" routerLink="/dashboard/history">
+          <i class="pi pi-history" style="font-size: 20px"></i>
+          Lịch sử
+        </button>
+      </nav>
+    </div>
+    <!-- <a routerLink="/">Go back</a> -->
+    <div class="author">
+      <img src="#" alt="">
+      <div class="author__info">
+        <span>name</span>
+        <span>gvhd</span>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard__right">
+    <router-outlet></router-outlet>
+  </div>
+</div>

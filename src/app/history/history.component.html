@@ -1,0 +1,17 @@
+<h2>Danh sach truong hoc</h2>
+<select name="SchoolsList" (change)="changeSchool($event)">
+  <option value="">Select</option>
+  <!-- <a routerLink="/Classes/{{item.id}}"> -->
+  <option *ngFor="let item of SchoolsList" [value]="item.id">{{item.name}}</option>
+  <!-- </a> -->
+</select>
+<br />
+ID: {{selectedValue}}
+
+<ul>
+  <li *ngFor="let item of SchoolsList">
+    <a routerLink="/Classes/{{item.id}}">
+      <span>{{item.id}}</span>{{item.name}}
+    </a>
+  </li>
+</ul>

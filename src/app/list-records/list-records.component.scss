@@ -1,0 +1,32 @@
+.dashboard {
+  &__right {
+    .title_author {
+      font-size: 28px;
+      line-height: 49px;
+      font-weight: bold;
+    }
+    // .list {
+    //   display: grid;
+    //   // height: 90%;
+    //   margin: 16px 16px 16px 0;
+    //   background: #ffffff;
+    //   border-radius: 16px;
+    //   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    //   &__test {
+    //     display: flex;
+    //     justify-content: space-around;
+    //   }
+    //   span {
+    //   }
+    // }
+    .list {
+      .p-d-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+      .line__height {
+        line-height: 2rem;
+      }
+    }
+  }
+}

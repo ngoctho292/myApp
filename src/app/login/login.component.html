@@ -1,0 +1,16 @@
+<div class="login">
+  <div class="login__banner">
+    <img src="../../assets/banner.png" alt="">
+  </div>
+  <div class="login__log">
+    <div class="title">
+      <span>HCM -</span>
+      EDU
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <input type="text" pInputText class="p-inputtext-md" formControlName="username" placeholder="Nhập tài khoản">
+      <input type="password" pInputText class="p-inputtext-md" formControlName="password" placeholder="Nhập mật khẩu">
+      <button pButton type="submit" label="Đăng nhập" class="p-button"></button>
+    </form>
+  </div>
+</div>

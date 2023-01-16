@@ -1,0 +1,47 @@
+.login {
+  &__banner {
+    background: #028cee;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__log {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+    .title {
+      color: #028cee;
+      line-height: 30px;
+      font-size: 80px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 20px;
+      span {
+        -webkit-text-stroke: 0.5px #da251c;
+        -webkit-text-fill-color: white;
+        line-height: 30px;
+        font-size: 80px;
+        font-weight: 900;
+      }
+    }
+    form {
+      display: grid;
+      gap: 10px;
+      button {
+        margin-top: 20px;
+        background: #028cee;
+        &:hover {
+          background: #1978bd;
+          // color: #028cee;
+          border: 1px solid #028cee;
+        }
+      }
+    }
+    // input {
+    //   width: 550px;
+    // }
+  }
+}

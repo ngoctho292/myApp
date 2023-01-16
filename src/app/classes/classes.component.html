@@ -1,0 +1,11 @@
+<h1>Danh sách lớp học</h1>
+<ul>
+  <li *ngFor="let item of items">
+    <span>Lớp: {{item.name}}</span><br>
+    <span>ID Lớp: {{item.schoolId}}</span><br>
+    <span>ID Giảng viên: {{item.homeroomTeacherId}}</span>
+    <button pButton type="button" class="p-button-sm" routerLink="/GetByClassId/{{item.id}}">
+      Xem danh sách học sinh
+    </button>
+  </li>
+</ul>

@@ -1,4 +1,4 @@
-<h1>Danh sách học sinh</h1>
+<!-- <h1>Danh sách học sinh</h1>
 <ul>
   <li *ngFor="let item of items">
     <span>Họ và tên: {{item.name}}</span><br>
@@ -7,7 +7,7 @@
     <span>Môn học:</span><input type="text" value="{{item.subjects[1].grade}}"><br>
     <span>Trường: {{item.school.name}}</span><br><br>
   </li>
-</ul>
+</ul> -->
 <p-table #dt1 [value]="items" dataKey="id" [rows]="10" [showCurrentPageReport]="true"
   [rowsPerPageOptions]="[10, 25, 50]" [loading]="loading" styleClass="p-datatable-customers" [paginator]="true"
   currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [globalFilterFields]="[
@@ -17,8 +17,8 @@
         'status'
       ]">
   <ng-template pTemplate="caption">
-    <div class="p-d-flex">
-      <h2>Danh sách học bạ</h2>
+    <div class="p-d-flex caption">
+      <h2>Danh sách học sinh</h2>
       <span class="p-input-icon-left p-ml-auto">
         <i class="pi pi-search"></i>
         <input pInputText type="text" (input)="dt1.filterGlobal($any($event.target).value, 'contains')"
@@ -83,9 +83,9 @@
       <th style="width: 8rem"></th>
     </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-customer>
+  <ng-template pTemplate="body" let-customer let-i="rowIndex">
     <tr>
-      <td></td>
+      <td class="serial_number">{{i + 1}}</td>
       <td>
         <span class="image-text">{{ customer.code }}</span>
       </td>

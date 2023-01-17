@@ -1,9 +1,11 @@
-input {
-  width: 20px;
-  height: 20px;
-  background: blue;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+.caption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+tr {
+  .serial_number {
+    padding-left: 22px;
+  }
 }
